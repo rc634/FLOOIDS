@@ -35,7 +35,7 @@ void Flooid::WriteData() {
 void Grid::PrintAll() {
   for (int i=0; i<nx_; i++) {
   	for (int j=0; j<nx_; j++) {
-      std::cout << i << "," << j << ": " << GetVal(i,j);
+      std::cout << i << "," << j << ": " << 0. << std::endl;
     }
   }
 }

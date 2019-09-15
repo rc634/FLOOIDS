@@ -47,8 +47,6 @@ public:
     Grid rho(N,G);
     Grid vx(N,G);
     Grid vy(N,G);
-    std::cout << "testy" << std::endl;
-    std::cout << rho.GetVal[0] << std::endl;
   };
   ~Flooid() {
     delete rho;
