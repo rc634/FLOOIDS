@@ -26,9 +26,8 @@ public:
   void shout();
   int index(const int i, const int j);
   void WriteData(const std::string filename);
-  void Grid::PrintAll();
-  double Grid::GetVal(const int i, const int j);
-}
+  void PrintAll();
+  double GetVal(const int i, const int j);
 
 };
 
