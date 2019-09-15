@@ -24,5 +24,25 @@ public:
 };
 
 
+class Flooid {
+private:
+  int nx_ = 0;
+  int ng_ = 0;
+  Grid* rho;
+  Grid* vx;
+  Grid* vy;
+
+public:
+  Flooid() {
+    nx_ = N;
+    ng_ = G;
+    Grid rho(1,1);
+    Grid vx(1,1);
+    Grid vy(1,1);
+  }
+
+}
+
+
 
 #endif // FLOOIDSARRAY_HPP_

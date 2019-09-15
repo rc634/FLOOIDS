@@ -10,8 +10,8 @@
 
 int main() {
 
-  Grid test_grid(1,1);
-  test_grid.shout();
+  Flooid test_flooid(1,1);
+  test_flooid.shout();
 
   return 0;
 }
