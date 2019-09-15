@@ -20,7 +20,7 @@ int Flooid::index(const int i, const int j) {
 }
 
 void Grid::WriteData(const std::string filename) {
-  std::ofstream outfile(namemodsqr,std::ios::binary);
+  std::ofstream outfile(filename,std::ios::binary);
   for (int i=0; i<nx_; ++i) {
     double val = data_[i];
     outfile.write(reinterpret_cast<const char*>(&val), sizeof(val));
@@ -29,5 +29,11 @@ void Grid::WriteData(const std::string filename) {
 }
 
 void Flooid::WriteData() {
-	rho.WriteData("rho");
+	rho->WriteData("rho.dat");
+}
+
+void Grid::PrintAll() {
+  for (int i=0; i<nx_*nx_; i++) {
+    std::cout << i << ": " << rho.GetVal()
+  }
 }
