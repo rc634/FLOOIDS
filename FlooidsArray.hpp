@@ -4,8 +4,8 @@
 
 class Grid {
 private:
-  int nx_ = 0;
-  int ng_ = 0;
+  const int nx_ = 0;
+  const int ng_ = 0;
   double* data_;
 
 public:
@@ -34,11 +34,11 @@ public:
 
 class Flooid {
 private:
-  int nx_ = 0;
-  int ng_ = 0;
-  Grid* rho;
+  const int nx_ = 0;
+  const int ng_ = 0;
+  /*Grid* rho;
   Grid* vx;
-  Grid* vy;
+  Grid* vy;*/
 
 public:
   Flooid(const int N, const int G) {
