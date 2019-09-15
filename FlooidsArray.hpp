@@ -9,13 +9,13 @@ private:
   double* data_;
 
 public:
-  FlooidsArray(const int N, const int G) {
+  Grid(const int N, const int G) {
     nx_ = N;
     ng_ = G;
     data_ = new double[nx_];
   };
 
-  ~FlooidsArray() {
+  ~Grid() {
     delete[] data_;
   };
 
