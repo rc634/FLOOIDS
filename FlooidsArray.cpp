@@ -45,5 +45,5 @@ double Grid::GetVal(const int i, const int j) {
 }
 
 void Flooid::Print() {
-	&rho.PrintAll();
+	rho->*.PrintAll();
 }
