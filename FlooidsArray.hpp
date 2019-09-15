@@ -36,17 +36,17 @@ class Flooid {
 private:
   int nx_ = 0;
   int ng_ = 0;
-  Grid* rho;
-  Grid* vx;
-  Grid* vy;
+  Grid *rho;
+  Grid *vx;
+  Grid *vy;
 
 public:
   Flooid(const int N, const int G) {
     nx_ = N;
     ng_ = G;
-    Grid rho(N,G);
-    Grid vx(N,G);
-    Grid vy(N,G);
+    rho = new Grid(N,G);
+    vx = new Grid(N,G);
+    vy = new Grid(N,G);
   };
   ~Flooid() {
     delete rho;
