@@ -10,7 +10,7 @@
 
 int main() {
 
-  test_grid = Grid(1,1);
+  Grid test_grid(1,1);
   test_grid.shout();
 
   return 0;
