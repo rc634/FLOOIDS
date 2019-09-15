@@ -12,7 +12,7 @@ public:
   Grid(const int N, const int G) {
     nx_ = N;
     ng_ = G;
-    data_ = new double[nx_];
+    data_ = new double[nx_*nx_];
   };
 
   ~Grid() {
@@ -20,6 +20,8 @@ public:
   };
 
   void shout();
+  int index(const int i, const int j);
+  void WriteData(const std::string filename);
 
 };
 
@@ -47,6 +49,8 @@ public:
   };
 
   void shout();
+  int index(const int i, const int j);
+  void WriteData();
 };
 
 

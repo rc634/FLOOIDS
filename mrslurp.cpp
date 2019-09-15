@@ -10,8 +10,9 @@
 
 int main() {
 
-  Flooid test_flooid(1,1);
+  Flooid test_flooid(5,5);
   test_flooid.shout();
+  test_flooid.WriteData();
 
   return 0;
 }
