@@ -45,6 +45,8 @@ public:
     delete vx;
     delete vy;
   };
+
+  void shout();
 };
 
 
