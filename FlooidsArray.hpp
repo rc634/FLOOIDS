@@ -13,6 +13,10 @@ public:
     nx_ = N;
     ng_ = G;
     data_ = new double[nx_*nx_];
+    for (int i=0; i<nx_*nx_; i++)
+    {
+      data_[i]=0.;
+    }
   };
 
   ~Grid() {
@@ -22,6 +26,9 @@ public:
   void shout();
   int index(const int i, const int j);
   void WriteData(const std::string filename);
+  void Grid::PrintAll();
+  double Grid::GetVal(const int i, const int j);
+}
 
 };
 
@@ -51,6 +58,7 @@ public:
   void shout();
   int index(const int i, const int j);
   void WriteData();
+  void Print();
 };
 
 
