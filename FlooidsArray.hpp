@@ -33,15 +33,19 @@ private:
   Grid* vy;
 
 public:
-  Flooid() {
+  Flooid(const int N, const int G) {
     nx_ = N;
     ng_ = G;
-    Grid rho(1,1);
-    Grid vx(1,1);
-    Grid vy(1,1);
-  }
-
-}
+    Grid rho(N,G);
+    Grid vx(N,G);
+    Grid vy(N,G);
+  };
+  ~Flooid() {
+    delete rho;
+    delete vx;
+    delete vy;
+  };
+};
 
 
 
